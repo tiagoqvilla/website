@@ -112,6 +112,50 @@ main {
   }
 }
 
+//Projetos
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  img {
+    width: 100%;
+    border: #fbfef9 3px solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      //@include easeOut;
+    }
+  }
+}
+
+//Botões
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  text-align: center;
+
+  &.hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fbfef9;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: $primary-color;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
