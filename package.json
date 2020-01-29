@@ -4,11 +4,14 @@
   "description": "Website de portfolio responsivo",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Tiago Villa",
   "license": "MIT",
+  "homepage": "https://tiagoqvilla.github.io/website",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   }
 }
